@@ -1,2 +1,10 @@
+#ignore credentiail
+credentials.txt
+credential.txt
+
+#ignore secret 
 *.env
+
+#ignore keraksiz filelar
 *.log
+.logs
