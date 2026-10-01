@@ -2,7 +2,9 @@
 
 # Deploy script for payments-api
 echo "Starting deployment of payments-api..."
-
+set -a
+source config.env
+set +a
 # TODO: Nega server ishga tushmayapti?
 python3 server.py &
 PID=$!
