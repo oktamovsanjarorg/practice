@@ -1,0 +1,5 @@
+#!/bin/bash
+# Boss process
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+"$DIR/secret-agent" &
+exec -a boss-system bash -c 'while true; do sleep 10; done'
