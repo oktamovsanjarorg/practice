@@ -8,3 +8,6 @@ credential.txt
 #ignore keraksiz filelar
 *.log
 .logs
+*.img
+*.wal
+*.db
