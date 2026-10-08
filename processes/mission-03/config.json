@@ -1,0 +1,5 @@
+{
+  "system_mode": "ACTIVE_PRODUCTION",
+  "log_level": "INFO",
+  "batch_size": 100
+}

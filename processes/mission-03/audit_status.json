@@ -1,0 +1,7 @@
+{
+  "worker_resumed": true,
+  "lock_cleared": true,
+  "config_reloaded": true,
+  "graceful_shutdown": true,
+  "corrupted_kills": 0
+}
