@@ -11,3 +11,4 @@ credential.txt
 *.img
 *.wal
 *.db
+*.dump
