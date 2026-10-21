@@ -1,0 +1,11 @@
+[Unit]
+Description=my health bot
+After=network.target
+[Service]
+ExecStart=/usr/bin/python3 /home/sanjar/labs/practice/systemd-live/health_bot.py
+WorkingDirectory=/home/sanjar/labs/practice/systemd-live
+Restart=always
+RestartSec=3s
+
+[Install]
+WantedBy=multi-user.target
