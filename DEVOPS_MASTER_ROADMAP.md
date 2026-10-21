@@ -933,3 +933,33 @@ Ushbu ro‘yxatdagi barcha bilimlarni bitta real loyihada birlashtiring:
 - [ ] 6. Nginx + SSL bilan domenni ulab, HTTPS qilish.
 - [ ] 7. Prometheus va Grafana orqali serverni monitoring qilish.
 - [ ] 8. GitHub'da to‘liq va chiroyli `README.md` arxitektura diagrammasi bilan portfolio chiqarish.
+
+
+---
+
+## ⏳ JUNIOR DEVOPS 35 KUNLIK SHARTNOMA VA VAQT DEDLAYNI (DEADLINE)
+
+* **Boshlangan sana va vaqt:** `2026-10-21 22:30:00 (+05:00)`
+* **Tugash sanasi va vaqti (DEDLAYN):** `2026-11-25 22:30:00 (+05:00)`
+* **Jami berilgan muddat:** **Aniq 35 kun (840 soat)**
+
+---
+
+### 35 KUNLIK TAHMINNING ANIQ ARXITEKTURA ASOSI (Hisob-kitob):
+
+Nega aynan 35 kun? Chunki Sanjar yo‘lning 35-40% qismini allaqachon bosib o‘tgan (Arch Linux, Systemd, Git, AWS asosiy ulanish). Qolgan 60-65% amaliyot quyidagi qat'iy bloklarga bo‘lindi:
+
+1. **1 – 5 kunlar (5 kun) — Tarmoq va Tizim Diagnostikasi:**
+   * `ss`, `curl`, `netstat`, `iptables`, `umask`, `SUID/SGID`, xotira va disk tahlili.
+2. **6 – 12 kunlar (7 kun) — Docker Chuqur Amaliyot:**
+   * Multi-stage build, Docker Compose, Volume va Network Namespace, `mb-platform` loyihasini to‘liq konteynerlash.
+3. **13 – 18 kunlar (6 kun) — CI/CD Avtomatlashtirish:**
+   * GitHub Actions orqali: Push ➔ Test ➔ Docker Build ➔ AWS EC2 (`study` serveriga) avtomat deploy.
+4. **19 – 27 kunlar (9 kun) — AWS Cloud & Terraform (IaC):**
+   * AWS VPC, Subnets, Security Groups, IAM, S3 va bularni Terraform kodi orqali avtomat ko‘tarish/o‘chirish.
+5. **28 – 33 kunlar (6 kun) — Kubernetes (K8s) & Monitoring:**
+   * K8s Pod, Deployment, Service, Ingress va Prometheus + Grafana dashboardlari.
+6. **34 – 35 kunlar (2 kun) — Yakuniy Sinov & Hisobot:**
+   * To‘liq portfolio loyihasini auditdan o‘tkazish, checklistni 100% yopish va natijani qabul qilish.
+
+> **QAT'IY VA'DA:** 2026-yil 25-noyabr soat 22:30 da ushbu ro‘yxat bo‘yicha to‘liq hisobot topshiriladi!
