@@ -1,0 +1,12 @@
+[Unit]
+Description=Auto System Metrics Exporter
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/sanjar/metrics.py
+Restart=always
+User=sanjar
+
+[Install]
+WantedBy=multi-user.target
+# Xizmat server qayta yuklanganda (reboot) avtomatik o'zi yoqilishi shart!

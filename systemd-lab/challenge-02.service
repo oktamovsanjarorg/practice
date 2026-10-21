@@ -1,0 +1,13 @@
+[Unit]
+Description=Payment Webhook Receiver
+After=network.target
+
+[Service]
+
+ExecStart=/usr/bin/python3 /home/sanjar/webhook.py
+User=sanjar
+Restart=always
+RestartSec=5s
+
+[Install]
+WantedBy=multi-user.target

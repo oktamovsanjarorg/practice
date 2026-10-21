@@ -1,0 +1,13 @@
+[Unit]
+Description=Database Daily Backup Daemon
+After=network.target
+
+[Service]
+# Xavfsizlik uchun alohida 'nobody' foydalanuvchisi tanlandi
+User=root
+# Lekin backup fayli /root/backups papkasiga yozilishi kerak deb belgilangan
+ExecStart=/usr/bin/bash -c "/usr/bin/mysqldump mydb -u root > /root/backups/mydb.sql"
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

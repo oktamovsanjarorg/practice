@@ -1,0 +1,11 @@
+[Unit]
+Description=Telegram Notifier Service
+After=network.target
+
+[Service]
+# Maqsad: Ushbu bot xizmatini ishga tushirish
+ExecStart=/usr/bin/python3 /home/sanjar/notifier.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

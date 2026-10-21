@@ -1,0 +1,13 @@
+[Unit]
+Description=Payment Database Syncer
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/sanjar/sync.py
+# Agar ma'lumotlar bazasi vaqtincha uzilsa, xizmat 1 soniyada 100 marta restart berib,
+# systemd'ning 'start-limit-hit' blokirovkasiga tushib qolmoqda va butunlay to'xtab qolmoqda.
+Restart=always
+User=sanjar
+RestartSec=3s
+[Install]
+WantedBy=multi-user.target

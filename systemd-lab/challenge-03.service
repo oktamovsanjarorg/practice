@@ -1,0 +1,13 @@
+[Unit]
+Description=NodeJS Order API Service
+After=network.target
+
+[Service]
+# Eslatma: server.js kodi o'z papkasidagi ./config.json va ./node_modules ga tayanadi
+ExecStart=/usr/bin/node /home/sanjar/projects/order-api/server.js
+Restart=on-failure
+WorkingDirectory=/home/sanjar/projects/order-api
+User=sanjar
+
+[Install]
+WantedBy=multi-user.target

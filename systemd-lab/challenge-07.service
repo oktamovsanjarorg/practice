@@ -1,0 +1,12 @@
+[Unit]
+Description=Redis Queue Consumer
+After=network.target
+
+[Service]
+# Dockerfile dan kelgan dasturchi buyruqni shunday yozgan:
+ExecStart=/usr/bin/python3 /home/sanjar/consumer.py
+Restart=always
+User=sanjar
+
+[Install]
+WantedBy=multi-user.target

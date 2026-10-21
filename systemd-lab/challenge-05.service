@@ -1,0 +1,13 @@
+[Unit]
+Description=FastAPI Background Worker
+After=network.target
+
+[Service]
+# Ilova oddiy 'python worker.py' buyrug'i orqali oldinda (foreground) ishlaydi
+Type=simple
+ExecStart=/usr/bin/python3 /home/sanjar/worker.py
+Restart=always
+RestartSec=3s
+
+[Install]
+WantedBy=multi-user.target

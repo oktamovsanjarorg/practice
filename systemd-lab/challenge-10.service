@@ -1,0 +1,15 @@
+[Unit]
+Description=E-Commerce Inventory API
+After=network.target
+
+[Service]
+# API kalitlari va maxfiy ma'lumotlar /home/sanjar/.env faylida saqlanadi.
+# Dasturchi ushbu fayldagi barcha o'zgaruvchilarni yuklash uchun quyidagini yozgan:
+EnvironmentFile=/home/sanjar/.env
+ExecStart=/usr/bin/python3 /home/sanjar/inventory.py
+Restart=always
+RestartSec=3s
+User=sanjar
+
+[Install]
+WantedBy=multi-user.target
