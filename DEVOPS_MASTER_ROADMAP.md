@@ -113,46 +113,46 @@
 ---
 
 ## 3-BOSQICH: Matn va Ma'lumotlarni Filtrlash (Text Processing)
-- [ ] Matn ko‘rish vositalari:
-  - [ ] `cat` — Kichik fayllarni ekranga chiqarish
-  - [ ] `cat -n` — Qator raqamlari bilan chiqarish
-  - [ ] `tac` — Faylni teskari tartibda (pastdan yuqoriga) chiqarish
-  - [ ] `head -n 20` — Faylning birinchi 20 qatorini ko‘rish
-  - [ ] `tail -n 20` — Faylning oxirgi 20 qatorini ko‘rish
-  - [ ] `tail -f /var/log/syslog` — Loglarni real vaqtda jonli kuzatish
-  - [ ] `tail -F` — Fayl o‘chib qayta yaratilsa ham (logrotate) kuzatishni davom ettirish
-  - [ ] `less` — Katta fayllarni xotirani to‘ldirmasdan qadamma-qadam o‘qish
-  - [ ] `less` ichida qidiruv (`/so'z`, `n`, `N`, `G`, `q`)
-- [ ] Qidiruv va Filtrlash (`grep` oilasi):
-  - [ ] `grep "pattern" file` — Aniq so‘zni qidirish
-  - [ ] `grep -i` — Katta-kichik harfni ajratmasdan qidirish (case-insensitive)
-  - [ ] `grep -v` — Qidirilgan so‘z QATNASHMAGAN qatorlarni chiqarish (inversion)
-  - [ ] `grep -r` yoki `grep -R` — Papka ichidagi barcha fayllardan rekursiv qidirish
-  - [ ] `grep -n` — Qator raqamini ko‘rsatish
-  - [ ] `grep -c` — Mos kelgan qatorlar sonini sanash
-  - [ ] `grep -l` — Faqat fayl nomlarini chiqarish
-  - [ ] `grep -E` — Regular Expressions (RegEx) yordamida qidirish
-  - [ ] `grep -o` — Butun qatorni emas, faqat mos kelgan so‘zning o‘zini chiqarish
-- [ ] Qayta ishlash va tahrirlash:
-  - [ ] `wc -l` — Qatorlar sonini sanash
-  - [ ] `wc -w` — So‘zlar sonini sanash
-  - [ ] `sort` — Matn qatorlarini alifbo bo‘yicha tartiblash
-  - [ ] `sort -n` — Sonlar bo‘yicha to‘g‘ri tartiblash (1, 2, 10)
-  - [ ] `sort -r` — Teskari tartiblash
-  - [ ] `sort -k` — Aniq ustun bo‘yicha tartiblash
-  - [ ] `uniq` — Ketma-ket kelgan bir xil qatorlarni tozalash (faqat `sort`dan keyin ishlaydi)
-  - [ ] `uniq -c` — Har bir takrorlangan qator necha marta uchraganini hisoblash
-  - [ ] `uniq -d` — Faqat takrorlangan qatorlarni ko‘rsatish
-  - [ ] `cut -d',' -f1,3` — Delimiter (ajratuvchi) bo‘yicha ustunlarni ajratib olish
-  - [ ] `tr` — Belgilarni almashtirish yoki o‘chirish (`tr 'a-z' 'A-Z'`, `tr -d '\r'`)
-- [ ] Murakkab matn qurollari:
-  - [ ] `sed` asoslari: Matn ichidagi so‘zni almashtirish (`sed 's/old/new/g' file`)
-  - [ ] `sed -i` — O‘zgarishni to‘g‘ridan-to‘g‘ri faylning o‘ziga saqlash
-  - [ ] `sed` bilan qatorlarni o‘chirish (`sed '/pattern/d' file`)
-  - [ ] `awk` asoslari: Ustunlar bilan ishlash (`awk '{print $1, $3}' file`)
-  - [ ] `awk` da ajratuvchi (delimiter) o‘rnatish: `awk -F':' '{print $1}' /etc/passwd`
-  - [ ] `awk` shartli filtrlash: `awk '$3 > 100 {print $0}' file`
-  - [ ] `awk` maxsus o‘zgaruvchilari: `NR` (qator raqami), `NF` (ustunlar soni)
+- [x] Matn ko‘rish vositalari:
+  - [x] `cat` — Kichik fayllarni ekranga chiqarish
+  - [x] `cat -n` — Qator raqamlari bilan chiqarish
+  - [x] `tac` — Faylni teskari tartibda (pastdan yuqoriga) chiqarish
+  - [x] `head -n 20` — Faylning birinchi 20 qatorini ko‘rish
+  - [x] `tail -n 20` — Faylning oxirgi 20 qatorini ko‘rish
+  - [x] `tail -f /var/log/syslog` — Loglarni real vaqtda jonli kuzatish
+  - [x] `tail -F` — Fayl o‘chib qayta yaratilsa ham (logrotate) kuzatishni davom ettirish
+  - [x] `less` — Katta fayllarni xotirani to‘ldirmasdan qadamma-qadam o‘qish
+  - [x] `less` ichida qidiruv (`/so'z`, `n`, `N`, `G`, `q`)
+- [x] Qidiruv va Filtrlash (`grep` oilasi):
+  - [x] `grep "pattern" file` — Aniq so‘zni qidirish
+  - [x] `grep -i` — Katta-kichik harfni ajratmasdan qidirish (case-insensitive)
+  - [x] `grep -v` — Qidirilgan so‘z QATNASHMAGAN qatorlarni chiqarish (inversion)
+  - [x] `grep -r` yoki `grep -R` — Papka ichidagi barcha fayllardan rekursiv qidirish
+  - [x] `grep -n` — Qator raqamini ko‘rsatish
+  - [x] `grep -c` — Mos kelgan qatorlar sonini sanash
+  - [x] `grep -l` — Faqat fayl nomlarini chiqarish
+  - [x] `grep -E` — Regular Expressions (RegEx) yordamida qidirish
+  - [x] `grep -o` — Butun qatorni emas, faqat mos kelgan so‘zning o‘zini chiqarish
+- [x] Qayta ishlash va tahrirlash:
+  - [x] `wc -l` — Qatorlar sonini sanash
+  - [x] `wc -w` — So‘zlar sonini sanash
+  - [x] `sort` — Matn qatorlarini alifbo bo‘yicha tartiblash
+  - [x] `sort -n` — Sonlar bo‘yicha to‘g‘ri tartiblash (1, 2, 10)
+  - [x] `sort -r` — Teskari tartiblash
+  - [x] `sort -k` — Aniq ustun bo‘yicha tartiblash
+  - [x] `uniq` — Ketma-ket kelgan bir xil qatorlarni tozalash (faqat `sort`dan keyin ishlaydi)
+  - [x] `uniq -c` — Har bir takrorlangan qator necha marta uchraganini hisoblash
+  - [x] `uniq -d` — Faqat takrorlangan qatorlarni ko‘rsatish
+  - [x] `cut -d',' -f1,3` — Delimiter (ajratuvchi) bo‘yicha ustunlarni ajratib olish
+  - [x] `tr` — Belgilarni almashtirish yoki o‘chirish (`tr 'a-z' 'A-Z'`, `tr -d '\r'`)
+- [x] Murakkab matn qurollari:
+  - [x] `sed` asoslari: Matn ichidagi so‘zni almashtirish (`sed 's/old/new/g' file`)
+  - [x] `sed -i` — O‘zgarishni to‘g‘ridan-to‘g‘ri faylning o‘ziga saqlash
+  - [x] `sed` bilan qatorlarni o‘chirish (`sed '/pattern/d' file`)
+  - [x] `awk` asoslari: Ustunlar bilan ishlash (`awk '{print $1, $3}' file`)
+  - [x] `awk` da ajratuvchi (delimiter) o‘rnatish: `awk -F':' '{print $1}' /etc/passwd`
+  - [x] `awk` shartli filtrlash: `awk '$3 > 100 {print $0}' file`
+  - [x] `awk` maxsus o‘zgaruvchilari: `NR` (qator raqami), `NF` (ustunlar soni)
 
 ---
 
