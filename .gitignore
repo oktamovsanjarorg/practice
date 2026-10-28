@@ -4,6 +4,8 @@ credential.txt
 
 #ignore secret 
 *.env
+*.vault
+sandbox/
 
 #ignore keraksiz filelar
 *.log
@@ -12,3 +14,6 @@ credential.txt
 *.wal
 *.db
 *.dump
+*.pid
+.*.pid
+__pycache__/
